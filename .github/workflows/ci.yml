@@ -30,7 +30,7 @@ jobs:
         run: python -m pytest
 
       - name: Check Flask application
-        run: python -m py_compile app.py
+        run: python -m py_compile app.py.
 
       - name: Build Docker image
         run: docker build -t cloud-cicd-app .
